@@ -1,11 +1,18 @@
 CREATE TABLE table_name (
     project_name VARCHAR(255)
 );
-
+---------------------------
 ALTER TABLE names_table
 ADD id INT AUTO_INCREMENT PRIMARY KEY;
-
+----------------------------------------
 INSERT INTO names_table (name) VALUES
     ('alef'),
     ('bet');
+-------------------------------------
+SELECT USR_ID, CONCAT(USR_FIRSTNAME, ' ', USR_LASTNAME) AS Full_Name
+FROM USERS
+WHERE USR_ROLE = 'Manager';
+----------------------------------------
+
+SHOW COLUMNS FROM USER;
 
